@@ -2,7 +2,6 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 .settings
 .classpath
-.project
 .mvn/
 build/classes
 /build/
