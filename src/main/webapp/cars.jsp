@@ -4,130 +4,7 @@
   <meta charset="utf-8">
   <title>Cars</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    header {
-      background: #2e8b57;
-      color: white;
-      padding: 20px;
-    }
-
-    h1 {
-      margin: 0 0 10px 0;
-    }
-
-    /* Car overview grid */
-    .overview {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-      flex-wrap: wrap;
-    }
-
-    .car-card {
-      width: 220px;
-      border: 2px solid #444;
-      border-radius: 10px;
-      background: white;
-      text-decoration: none;
-      color: black;
-      transition: 0.3s;
-      text-align: center;
-    }
-
-    .car-card img {
-      width: 100%;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-    }
-
-    .car-card-title {
-      padding: 10px;
-      font-weight: bold;
-    }
-
-    .car-card:hover {
-      transform: scale(1.05);
-    }
-
-    /* Car detail section */
-    .car-detail {
-      display: none;
-      padding: 40px 20px;
-    }
-
-    .car-detail img {
-      width: 60%;
-      max-width: 400px;
-      height: auto;
-      display: block;
-      margin: 15px auto;
-      border-radius: 10px;
-    }
-
-    form {
-      margin-top: 20px;
-    }
-
-    label {
-      display: inline-block;
-      width: 120px;
-      text-align: left;
-      margin-bottom: 10px;
-    }
-
-    input, select {
-      padding: 5px;
-      width: 200px;
-      margin-bottom: 15px;
-    }
-
-    button {
-      background-color: #2e8b57;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #246b45;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 8px 16px;
-      background: #2e8b57;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .back-link:hover {
-      background-color: #246b45;
-    }
-
-    /* Show detail when targeted */
-    :target {
-      display: block;
-    }
-
-    /* Hide overview when any detail is targeted */
-    body:has(:target) .overview {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="css/cars.css">
 </head>
 <body>
 
@@ -135,8 +12,6 @@
     <h1>Latest Cars Collection</h1>
     <p>Check out our premium cars</p>
   </header>
-
-  <!-- Car overview -->
   <section class="overview">
     <a class="car-card" href="#tesla">
       <img src="images/tesla.jpg" alt="Tesla Model S">
@@ -153,13 +28,11 @@
       <div class="car-card-title">Audi A6</div>
     </a>
   </section>
-
-  <!-- Tesla Detail -->
   <section id="tesla" class="car-detail">
     <h2>Tesla Model S</h2>
     <img src="images/tesla.jpg" alt="Tesla Model S">
 
-    <form action="cars" method="post">
+    <form action="cars" method="get">
       <label>Car Name:</label>
       <input type="text" name="carname" value="Tesla Model S" readonly><br>
 
@@ -177,7 +50,7 @@
     <h2>BMW X5</h2>
     <img src="images/bmw.jpg" alt="BMW X5">
 
-    <form action="cars" method="post">
+    <form action="cars" method="get">
       <label>Car Name:</label>
       <input type="text" name="carname" value="BMW X5" readonly><br>
 
@@ -196,7 +69,7 @@
     <h2>Audi A6</h2>
     <img src="images/audi.jpg" alt="Audi A6">
 
-    <form action="cars" method="post">
+    <form action="cars" method="get">
       <label>Car Name:</label>
       <input type="text" name="carname" value="Audi A6" readonly><br>
 
