@@ -1,0 +1,75 @@
+body {
+  background: #eef8ff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #4682b4;
+  color: white;
+  padding: 20px;
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.clothes-card {
+  width: 200px;
+  text-decoration: none;
+}
+
+.clothes-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.clothes-card-title {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.clothes-detail {
+  margin: 60px auto;
+  max-width: 500px;
+}
+
+.clothes-detail img {
+    width: 300px;          /* control size */
+    height: 300px;         /* uniform size */
+    object-fit: cover;     /* crop properly */
+    display: block;
+    margin: 0 auto 20px;   /* centered + spacing */
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+form input, form button {
+  margin: 8px;
+  padding: 10px;
+  width: 60%;
+}
+
+button {
+  background: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #36648b;
+}

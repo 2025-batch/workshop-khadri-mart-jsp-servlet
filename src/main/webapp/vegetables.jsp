@@ -4,120 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vegetables</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-      color: white;
-      background: linear-gradient(to right, #4caf50, #388e3c);
-    }
-
-    .overview {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-      flex-wrap: wrap;
-    }
-
-    .veg-card {
-      width: 180px;
-      border: 2px solid #444;
-      border-radius: 10px;
-      background: white;
-      text-align: center;
-      text-decoration: none;
-      color: black;
-      transition: 0.3s;
-    }
-
-    .veg-card img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-    }
-
-    .veg-card-title {
-      padding: 10px;
-      font-weight: bold;
-    }
-
-    .veg-card:hover {
-      transform: scale(1.05);
-    }
-
-    .veg-detail {
-      display: none;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .veg-detail img {
-      width: 200px;
-      border-radius: 10px;
-    }
-
-    form {
-      margin-top: 20px;
-    }
-
-    label {
-      display: inline-block;
-      width: 100px;
-      text-align: left;
-      margin-bottom: 10px;
-    }
-
-    input {
-      padding: 5px;
-      width: 200px;
-      margin-bottom: 15px;
-    }
-
-    button {
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #388e3c;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 8px 16px;
-      background-color: #4caf50;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .back-link:hover {
-      background-color: #388e3c;
-    }
-
-    :target {
-      display: block;
-    }
-
-    body:has(:target) .overview {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="css/vegetable.css">
 </head>
 <body>
 
@@ -155,7 +42,6 @@
       <input type="number" name="quantity" placeholder="Enter quantity"><br>
        <input type="hidden" name="user" value="khadri">
       <button type="submit">add</button>
-      <button type="submit">Submit</button>
     </form>
   </section>
 
@@ -171,15 +57,13 @@
       <input type="number" name="quantity" placeholder="Enter quantity"><br>
        <input type="hidden" name="user" value="khadri" >
       <button type="submit">add</button>
-
-      <button type="submit">Submit</button>
     </form>
 
   </section>
   <section id="carrot" class="veg-detail">
     <h2>Carrot</h2>
     <img src="images/carrot.jpg" alt="Carrot">
-    
+   
     <form action="vegetable" method="post">
   <label>Vegetable Name:</label>
   <input type="text" name="vegname" value="Tomato" readonly><br>
@@ -191,8 +75,6 @@
 
   <button type="submit">Add</button>
 </form>
-
   </section>
-
 </body>
 </html>

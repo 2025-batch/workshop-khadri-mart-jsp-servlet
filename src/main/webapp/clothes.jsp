@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/clothes.css">
+
   <title>Clothes</title>
 </head>
 <body>
@@ -12,7 +14,6 @@
     <p>Browse and order your favorite clothes</p>
   </header>
 
-  <!-- Clothes overview -->
   <section class="overview">
     <a class="clothes-card" href="#shirt">
       <img src="images/shirt.jpg" alt="Shirt">
@@ -30,12 +31,11 @@
     </a>
   </section>
 
-  <!-- Shirt detail -->
   <section id="shirt" class="clothes-detail">
     <h2>Shirt</h2>
     <img src="images/shirt.jpg" alt="Shirt">
     
-    <form method="post" action="clothes">
+    <form method="get" action="clothes">
       <label>Clothes Name:</label>
       <input type="text" name="clothname" value="Shirt" readonly><br>
       
@@ -46,12 +46,11 @@
     </form>
   </section>
 
-  <!-- Jeans detail -->
   <section id="jeans" class="clothes-detail">
     <h2>Jeans</h2>
     <img src="images/jeans.jpg" alt="Jeans">
     
-    <form method="post" action="clothes">
+    <form method="get" action="clothes">
       <label>Clothes Name:</label>
       <input type="text" name="clothname" value="Jeans" readonly><br>
       
@@ -62,12 +61,11 @@
     </form>
   </section>
 
-  <!-- Jacket detail -->
   <section id="jacket" class="clothes-detail">
     <h2>Jacket</h2>
     <img src="images/jacket.jpg" alt="Jacket">
     
-    <form method="post" action="clothes">
+    <form method="get" action="clothes">
       <label>Clothes Name:</label>
       <input type="text" name="clothname" value="Jacket" readonly><br>
       

@@ -36,53 +36,51 @@
 
 <nav>
   <div class="dropdown">
-    <a href="#">VEGETABLES ▾</a>
+    <a href="#">VEGETABLES &#9662;</a>
     <div class="dropdown-content">
-      <a href="vegetables.html#tomato" target="content-frame">Tomato</a>
-      <a href="vegetables.html#onion" target="content-frame">Onion</a>
-      <a href="vegetables.html#carrot" target="content-frame">Carrot</a>
+      <a href="vegetables.jsp#tomato" target="content-frame">Tomato</a>
+      <a href="vegetables.jsp#onion" target="content-frame">Onion</a>
+      <a href="vegetables.jsp#carrot" target="content-frame">Carrot</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <a href="#">FRUITS ▾</a>
+    <a href="#">FRUITS &#9662;</a>
     <div class="dropdown-content">
-      <a href="fruits.html#apple" target="content-frame">Apple</a>
-      <a href="fruits.html#banana" target="content-frame">Banana</a>
-      <a href="fruits.html#mango" target="content-frame">Mango</a>
+      <a href="fruits.jsp#apple" target="content-frame">Apple</a>
+      <a href="fruits.jsp#banana" target="content-frame">Banana</a>
+      <a href="fruits.jsp#mango" target="content-frame">Mango</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <a href="#">CARS ▾</a>
+    <a href="#">CARS &#9662;</a>
     <div class="dropdown-content">
-      <a href="cars.html#tesla" target="content-frame">Tesla Model S</a>
-      <a href="cars.html#bmw" target="content-frame">BMW X5</a>
-      <a href="cars.html#audi" target="content-frame">Audi A6</a>
+      <a href="cars.jsp#tesla" target="content-frame">Tesla Model S</a>
+      <a href="cars.jsp#bmw" target="content-frame">BMW X5</a>
+      <a href="cars.jsp#audi" target="content-frame">Audi A6</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <a href="#">SNACKS ▾</a>
+    <a href="#">SNACKS &#9662;</a>
     <div class="dropdown-content">
-      <a href="snacks.html#chips" target="content-frame">Potato Chips</a>
-      <a href="snacks.html#samosa" target="content-frame">Samosa</a>
-      <a href="snacks.html#popcorn" target="content-frame">Popcorn</a>
+      <a href="snacks.jsp#chips" target="content-frame">Potato Chips</a>
+      <a href="snacks.jsp#samosa" target="content-frame">Samosa</a>
+      <a href="snacks.jsp#popcorn" target="content-frame">Popcorn</a>
     </div>
   </div>
   <div class="dropdown">
-    <a href="#">CLOTHES ▾</a>
+    <a href="#">CLOTHES &#9662;</a>
     <div class="dropdown-content">
-      <a href="clothes.html#shirt" target="content-frame">Shirt</a>
-      <a href="clothes.html#jeans" target="content-frame">Jeans</a>
-      <a href="clothes.html#jacket" target="content-frame">Jacket</a>
+      <a href="clothes.jsp#shirt" target="content-frame">Shirt</a>
+      <a href="clothes.jsp#jeans" target="content-frame">Jeans</a>
+      <a href="clothes.jsp#jacket" target="content-frame">Jacket</a>
     </div>
   </div>
 
-  <a href="contact.html" target="content-frame">CONTACT</a>
+  <a href="contact.jsp" target="content-frame">CONTACT</a>
 </nav>
-
-<!-- Iframe for content -->
 <iframe name="content-frame"></iframe>
 
 <footer>
